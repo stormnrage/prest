@@ -1,0 +1,25 @@
+body{
+    background-color: rgb(150, 129, 235);
+    list-style: none;
+}
+body header{
+    background-color: rgb(101, 39, 190);
+}
+body footer{
+    background-color: rgb(101, 39, 190);
+}   
+body header ul{
+    color: black;
+    list-style: none;
+    text-decoration: none;
+} 
+li{
+    color: black;
+    list-style: none;
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
