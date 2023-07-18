@@ -51,8 +51,10 @@ function simularPrestamo() {
   
       listaPrestamosElement.appendChild(item);
     }
+    
   }
   
+  document.getElementById('btnMostrarPrestamos').addEventListener('click', mostrarPrestamosGuardados);
   // Mostrar los préstamos guardados al cargar la página
   mostrarPrestamosGuardados();
 }

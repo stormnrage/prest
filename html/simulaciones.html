@@ -34,9 +34,34 @@
     </header>
     <!---->   
     <main>
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre">
+      <label for="prestamo">Monto:</label>
+      <input type="text" id="prestamo">
+      <label for="cuotas">Cantidad de cuotas:</label>
+      <input type="text" id="cuotas">
+
+      <button onclick="simularPrestamo()">Simular</button>
+
+
+    <div id="ventana-emergente" class="ventana-emergente">
+      <div class="recuadro">
+        <h2></h2>
+        <button onclick="cerrarVentanaEmergente()">Aceptar</button>
+      </div>
+    </div>
+
+<div id="importe-cuota" style="display: none;">
+<p></p>
+</div>
+
+
       <h1>Lista de Préstamos Simulados</h1>
       <ul id="lista-prestamos"></ul>
+      <button id="btnMostrarPrestamos">Mostrar Préstamos Guardados</button>
     </main>
+    
+
     <!--footer-->
     <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
         <div class="col-md-4 d-flex align-items-center">
