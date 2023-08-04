@@ -7,7 +7,12 @@ function simularPrestamo() {
   let ventanaEmergenteMensaje = ventanaEmergente.querySelector('h2');
 
   if (cuotas < 1 || cuotas > 18) {
-    ventanaEmergenteMensaje.textContent = "Ingresa un número de cuotas válido (entre 1 y 18)";
+    Swal.fire({
+  icon: 'error',
+  title: 'Oops...',
+  text: 'Something went wrong!',
+  footer: '<a href="">Why do I have this issue?</a>'
+})
     ventanaEmergente.style.display = "block";
     return;
   }

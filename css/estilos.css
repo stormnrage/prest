@@ -1,6 +1,8 @@
 body{
-    background-color: rgb(150, 129, 235);
+    background-color: #9681eb;
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23b69ae3' fill-opacity='0.58' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
     list-style: none;
+    
 }
 body header{
     background-color: rgb(101, 39, 190);
@@ -16,6 +18,9 @@ body header ul{
 li{
     color: black;
     list-style: none;
+}
+body main{
+    padding: 5%;
 }
 
 footer{
@@ -36,3 +41,14 @@ footer{
     display: none;
   }
   
+  @media (max-width: 400px){
+    main{
+        flex-direction: column;
+    }
+    .formular{
+        display: flex;
+    }
+    footer{
+        position: relative;
+    }
+  }
